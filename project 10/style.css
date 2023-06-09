@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  height: 780px;
+  position: relative;
+}
+.container {
+  padding-top: 10rem;
+  min-width: 690px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+input[type="text"] {
+  font-size: 2.7rem;
+  width: 29.4rem;
+  height: 80px;
+  color: #333;
+  padding: 0 1.5rem;
+  letter-spacing: 2px;
+}
+table {
+  margin: 20px auto 0 auto;
+}
+td {
+  width: 80px;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  color: #333;
+  user-select: none;
+  transition: 0.3s all;
+}
+table,
+input[type="text"] {
+  /* border: 1px solid #aaa; */
+  border: none;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.09);
+}
+table,
+td,
+input[type="text"] {
+  border-radius: 3px;
+}
+.operator {
+  background-color: lightgray;
+  font-weight: bold;
+}
+.operator.active {
+  background-color: #333;
+  color: white;
+}
+.cancel {
+  background: rgb(255, 196, 86);
+}
+.cancel:hover {
+  background: rgb(255, 183, 49);
+}
+.equal {
+  background-color: lightblue;
+}
+.equal:hover {
+  background-color: rgba(173, 216, 230, 0.808);
+}
+td:hover {
+  background-color: rgba(221, 221, 221, 0.432);
+}
+.cancel:hover,
+.equal:hover,
+.operator:hover {
+  transform: scale(0.96);
+}
+.alert.math-error {
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  font-weight: bold;
+  transform: translateX(-50%);
+  color: rgb(248, 71, 71);
+  z-index: 1000;
+}

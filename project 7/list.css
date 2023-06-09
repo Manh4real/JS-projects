@@ -1,0 +1,16 @@
+.list::-webkit-scrollbar {
+  width: 4px;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+.list:hover::-webkit-scrollbar {
+  display: block;
+}

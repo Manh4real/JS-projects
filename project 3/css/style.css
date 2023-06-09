@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio");
+@import "./darkmode.css";
+
+:root {
+  --pri-color: #333;
+  --minor-color: #747474;
+  --pri-bg-color: #fff;
+  --icon-bg-color: #fff;
+  --light-green: #68ca87;
+  --lighter-green: #9ded9a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--lighter-green);
+}
+
+body {
+  /* width: 100%;
+  height: 100%; */
+  background-color: var(--pri-bg-color);
+  color: var(--pri-color);
+  transition: all 0.2s linear;
+}
+section.main {
+  /* width: 100%;
+  height: 100%; */
+  min-width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+h1.title {
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 3rem;
+  position: relative;
+}
+h1.title::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 5px;
+  background: var(--light-green);
+}
+h1.name {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+h2.job {
+  font-size: 20px;
+  color: var(--minor-color);
+}
+.main .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  min-width: 760px;
+  /* height: 100%; */
+  background-color: #edf8ff5b;
+  padding: 3.5rem 5rem;
+  box-shadow: -5px 10px 0 2px #2d3958;
+  border-radius: 10px;
+}
+.content .content-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+}
+.intro-title {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+.name-job {
+  height: 70px;
+  text-align: center;
+  opacity: 0;
+}
+.slide-icon {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.slide-icon i {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bolder;
+  cursor: pointer;
+  user-select: none;
+}
+.slide-icon i:hover {
+  color: var(--light-green);
+}
+.image-block {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -20px;
+}
+.image-block-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+.image-block::before {
+  content: url(../img/quote.png);
+  position: absolute;
+  top: 0;
+  left: -10%;
+  z-index: 11;
+}
+.image-block::after {
+  content: "";
+  position: absolute;
+  top: -7%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--lighter-green);
+  z-index: 9;
+}
+img {
+  width: 200px;
+  user-select: none;
+}
+.btn {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  color: #333;
+  background-color: #fbfaf7;
+  box-shadow: 5px 5px 0 0 var(--light-green);
+
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: 0.3s all;
+}
+.btn:hover {
+  box-shadow: none;
+  color: #fbfaf7;
+  background-color: var(--light-green);
+}
+.intro-content {
+  height: 80px;
+  font-style: italic;
+}
+#avatar {
+  opacity: 0;
+}
+.intro-content .intro {
+  text-indent: 1.5rem;
+  word-wrap: break-word;
+  /* word-break: break-all; */
+  opacity: 0;
+  transform: translateY(100%);
+}

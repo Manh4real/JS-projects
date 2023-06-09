@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50px;
+}
+.main {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  min-width: 500px;
+  height: 792px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 450px;
+  height: max-content;
+  /* background: lightgray; */
+  border-radius: 8px;
+  border: 1px solid #333;
+  overflow: hidden;
+  /* box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 0.2); */
+}
+.content .header {
+  height: 150px;
+  /* background: lightblue; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.content .header .title {
+  font-weight: bolder;
+}
+.content .header .intro {
+  font-size: 15px;
+  font-weight: normal;
+  color: #444;
+}
+.filter {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  height: 30px;
+}
+.options,
+#search {
+  height: 100%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 5px;
+}
+#search {
+  padding: 10px;
+}
+.list {
+  height: 400px;
+  overflow-y: auto;
+  list-style: none;
+  text-align: center;
+}
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+.list .no-results {
+  padding: 10px;
+}
+.list li {
+  padding: 0.7rem;
+  /* width: 100%; */
+  height: 75px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.226);
+  position: relative;
+}
+.list li:hover {
+  background: whitesmoke;
+}
+.list li .image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid #888;
+  overflow: hidden;
+}
+.list li .info-container {
+  float: right;
+  text-align: left;
+  width: 80%;
+}
+.info-container .name {
+  font-size: 17px;
+}
+.info-container .location {
+  font-size: 12px;
+}
+.list li .more {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.list li .more:hover {
+  background: lightgray;
+}
+.form-block {
+  display: inline-block;
+  position: relative;
+}
+.info {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, 0);
+  cursor: pointer;
+}
+.fa-question-circle {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}

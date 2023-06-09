@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <script src="./script.js" type="module" defer></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <div class="title">
+          <h1>drink water <span style="font-size: larger">!</span></h1>
+          <div class="goal-text">
+            Goal:
+            <span
+              class="text"
+              data-goal="2"
+              title="Click here to edit"
+              contenteditable="true"
+              >2</span
+            >
+            liters
+          </div>
+        </div>
+        <div class="bottle">
+          <div class="remaining">
+            <div class="text"></div>
+          </div>
+          <div class="water-level">
+            <span id="percentage"></span>
+          </div>
+        </div>
+        <div class="select-block">
+          <h3 class="title">
+            Select how many cups of water that you have drank TODAY
+          </h3>
+          <div class="cups"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

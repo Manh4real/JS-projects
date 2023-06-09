@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+}
+.sec {
+  width: 100%;
+  min-width: 1519px;
+  height: 100vh;
+  min-height: 792px;
+}
+.sec1,
+.sec2 {
+  background-color: lightgray;
+}
+.main {
+  position: relative;
+  background-color: lightgreen;
+  color: #333;
+}
+.timeline {
+  height: 100%;
+  position: relative;
+}
+.timeline-bar {
+  position: absolute;
+  background: #333;
+  width: 6px;
+  top: 2rem;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .content {
+  height: 100%;
+} */
+.content-container,
+.timeline-bar {
+  border-radius: 10px;
+}
+.content .content-container {
+  position: relative;
+  max-width: 18rem;
+  height: 9rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  font-size: 13px;
+  z-index: 10;
+  opacity: 0;
+  transition: all 1s;
+}
+.year {
+  font-weight: bold;
+  font-size: 15px;
+}
+.main-content {
+  padding: 1rem;
+}
+.content-container:nth-child(odd) {
+  right: -50%;
+  transform: translate(-200%, 50%);
+}
+.content-container:nth-child(even) {
+  left: 50%;
+  transform: translate(100%, 50%);
+}
+.content-container.translated {
+  opacity: 1;
+}
+.content-container:nth-child(odd).translated {
+  transform: translate(-150%, 50%);
+}
+.content-container:nth-child(even).translated {
+  transform: translate(50%, 50%);
+}
+.content .content-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  z-index: -1;
+}
+.content-container .dot {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #444;
+}
+.content .content-container:nth-child(odd) .dot {
+  right: -50%;
+  transform: translate(50%, -50%);
+}
+.content-container:nth-child(even) .dot {
+  left: -50%;
+  transform: translate(-50%, -50%);
+}
+.content-container:nth-child(odd)::before {
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+.content-container:nth-child(even)::before {
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}

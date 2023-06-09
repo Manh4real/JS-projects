@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  width: 100vw;
+  height: 792px;
+  color: #333;
+}
+
+.container {
+  width: calc(350px * 1.1);
+  height: calc(450px * 1.1);
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  text-align: left;
+  height: 100%;
+  padding: 2rem 2.5rem;
+  font-size: calc(18px * 1.2);
+}
+.title {
+  text-align: center;
+  font-size: calc(28px * 1.1);
+}
+.input {
+  text-align: center;
+}
+.input input {
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+#length {
+  padding: 2px;
+}
+.selection {
+  margin: 2rem 0 3rem 0;
+  user-select: none;
+  font-family: "Open Sans", sans-serif;
+  color: #111;
+}
+.selection .el {
+  padding: 10px 0;
+  position: relative;
+  font-size: calc(12px * 1.2);
+}
+.el input {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+  background: transparent;
+}
+.el label {
+  cursor: pointer;
+}
+.btn button {
+  padding: 8px 20px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 7px;
+  border: 1px solid #444;
+  user-select: none;
+  cursor: pointer;
+}
+input {
+  border: 1px solid #333;
+}
+.input {
+  margin: 1rem 0;
+  position: relative;
+}
+.input .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.far {
+  font-size: 22px;
+}
+.pop-up {
+  display: none;
+}
+.input .icon:hover .pop-up {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 125%);
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: #444;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.alert.success {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(43, 224, 43);
+  background: rgb(232, 255, 246);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bolder;
+  border: 1px solid rgb(43, 224, 43);
+  font-family: "Open Sans", sans-serif;
+}

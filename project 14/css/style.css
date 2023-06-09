@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-width: 500px;
+  height: 792px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 450px;
+}
+.content {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.feelings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.feeling {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+  color: #333;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.feeling.active {
+  background: rgb(168, 168, 168);
+}
+.feeling .text {
+  text-transform: capitalize;
+}
+.far {
+  font-size: 3rem;
+}
+.btn {
+  display: inline-block;
+}
+.btn button {
+  display: inline-block;
+  color: #fff;
+  background: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background: whitesmoke;
+  color: #333;
+}
+/* ======= */
+
+.pop-up {
+  position: absolute;
+  background: linear-gradient(45deg, whitesmoke, transparent);
+  width: 520px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #333;
+  backdrop-filter: blur(20px);
+  animation: popup 0.3s ease-in-out;
+}
+@keyframes popup {
+  from {
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.pop-up .image {
+  display: inline-block;
+}
+.pop-up .message {
+  padding: 1.25rem 0;
+}
+.pop-up .message p:first-child {
+  line-height: 0.5;
+  font-size: calc(1.3rem * 1.25);
+  padding: 16px 0;
+}
+.pop-up .received-feeling {
+  font-size: calc(2.5rem * 1.25);
+  font-weight: bold;
+  color: rgb(250, 145, 161);
+  text-transform: capitalize;
+}
+.pop-up .message p:last-child {
+  font-size: calc(15px * 1.25);
+  font-weight: bold;
+}
+.pop-up .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+img {
+  user-select: none;
+}

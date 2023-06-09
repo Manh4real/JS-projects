@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: lightslategrey;
+}
+header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: dropdown 0.5s ease-out;
+}
+@keyframes dropdown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ul {
+  display: block;
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+}
+section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  font-size: 4rem;
+}
+#home {
+  background-color: lightslategrey;
+}
+#about {
+  background-color: lightsteelblue;
+}
+#services {
+  background-color: lightyellow;
+}
+#tours {
+  background-color: linen;
+}
+button.to-top {
+  font-size: 17px;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  background-color: rgb(248, 248, 248);
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+  transform: translateY(300%);
+}
+button.active {
+  z-index: 1000;
+  transform: translateY(0);
+}
+footer {
+  background: transparent;
+}
+footer .container {
+  height: 200px;
+  padding: 20px;
+  background-color: slategrey;
+  overflow-y: auto;
+}
+footer .container::-webkit-scrollbar {
+  background-color: transparent;
+}
+footer .container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #fff;
+}

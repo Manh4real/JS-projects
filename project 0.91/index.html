@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <script src="./script.js" type="module" defer></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <div class="content">
+          <h1 class="title">Passwork Generator</h1>
+          <div class="input">
+            <input type="text" class="show-up" disabled />
+            <div class="icon">
+              <i class="far fa-clipboard"></i>
+              <div class="pop-up">
+                <span>Copy</span>
+              </div>
+            </div>
+          </div>
+          <div class="selection">
+            <div class="el length">
+              <label for="length">Password Length</label>
+              <input
+                type="number"
+                name=""
+                id="length"
+                min="1"
+                value="10"
+                max="20"
+              />
+            </div>
+            <div class="el c uc">
+              <label for="uc">Include UPPERCASE letters</label>
+              <input type="checkbox" name="" id="uc" />
+            </div>
+            <div class="el c lc">
+              <label for="lc">Include lower letters</label>
+              <input type="checkbox" name="" id="lc" />
+            </div>
+            <div class="el c num">
+              <label for="num">Include Numbers</label>
+              <input type="checkbox" name="" id="num" />
+            </div>
+            <div class="el c sym">
+              <label for="sym">Include Symbols</label
+              ><input type="checkbox" name="" id="sym" />
+            </div>
+          </div>
+          <div class="btn">
+            <button>Generate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

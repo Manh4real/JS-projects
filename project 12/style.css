@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+img {
+  min-width: 150px;
+  max-width: 150px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.main {
+  background: whitesmoke;
+  min-height: 792px;
+  height: 792px;
+}
+.content-container {
+  height: 100%;
+  width: 600px;
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  top: 16rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  padding: 3rem;
+  border: 1px solid #444;
+  margin-bottom: 10px;
+}
+.search {
+  margin-bottom: 1.5rem;
+}
+.search input[type="text"] {
+  padding: 10px;
+  width: 230px;
+  font-size: 15px;
+  outline: none;
+  /* border-radius: 10px; */
+  border: 1px solid #333;
+}
+.user-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 500px;
+}
+.user-info-container .image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #999;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.user-info-container .info {
+  display: inline-block;
+  min-width: 230px;
+}
+.info .name {
+  font-size: 28px;
+}
+.basic {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  font-size: 12px;
+}
+.num {
+  font-weight: bold;
+}
+.links {
+  max-width: 230px;
+  max-height: 80px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.links::-webkit-scrollbar {
+  /* display: none; */
+  width: 4px;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.links::-webkit-scrollbar-track {
+  background: transparent;
+}
+.links::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+.links:hover::-webkit-scrollbar {
+  display: block;
+}
+.links a {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin-right: 5px;
+}
